@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css">
+    <script src="https://unpkg.com/@mui/material@latest/umd/material-ui.production.min.js"></script>
+    <script src="conversion.js"></script>
+    <title>Exercise 1</title>
+</head>
+<body>
+    <h2 class="title">Conversion From ε-NFA to DFA</h2>
+    <div class="inst">
+        <h4>How to use:</h4>
+        <p>Enter the non-deterministic automata (NFA) transitions here, then define the final states and initial state.</p>
+        <ul>
+            <li>The left-hand current state of each transition must be filled in.</li>
+            <li>[ ε ] - An empty text field corresponds to lambda (or epsilon).</li>
+            <li>The finite set of states ( Q ) and the alphabet ( Σ ) will be generated automatically based on the transitions entered.</li>
+            <li>Inputs are case-sensitive and whitespace is not ignored.</li>
+            <li>All entries should be delimited by a comma, if permitted.</li>
+        </ul>
+    </div>
+    <div class="inputs">
+        <input type="text" id= "firstState" placeholder="Enter Initial State Here...">
+        <input type="text" id="finalStates" placeholder="Enter Final States Here...">
+        <div class="button">
+            <input type="button" value="Enter" class="EnterButton" onclick="states()">
+        </div>
+    </div>
+    <p id="startState"></p>
+    <p id="endStates"></p>
+    <div class="moreInputs">
+        <p>δ(
+            <input type="text" class="secondInputs" placeholder="giving state"> ,
+            <input type="text" class="secondInputs" placeholder="ε"> ) =
+            <input type="text" class="secondInputs" placeholder="receiving state">
+        </p>
+    </div>
+</body>
+</html>
