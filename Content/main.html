@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styling.css">
-    <script src="https://unpkg.com/@mui/material@latest/umd/material-ui.production.min.js"></script>
     <script src="conversion.js"></script>
+    <script src="engine.js"></script>
     <title>Exercise 1</title>
 </head>
 <body>
@@ -25,20 +25,23 @@
         </ul>
     </div>
     <div class="inputs">
+        <h4>Inputs:</h4>
         <input type="text" id= "firstState" placeholder="Enter Initial State Here...">
         <input type="text" id="finalStates" placeholder="Enter Final States Here...">
-        <div class="button">
-            <input type="button" value="Enter" class="EnterButton" onclick="states()">
-        </div>
-    </div>
-    <p id="startState"></p>
-    <p id="endStates"></p>
-    <div class="moreInputs">
         <p>δ(
             <input type="text" class="secondInputs" placeholder="giving state"> ,
             <input type="text" class="secondInputs" placeholder="ε"> ) =
             <input type="text" class="secondInputs" placeholder="receiving state">
         </p>
+        <div class="button">
+            <input type="button" value="Enter" class="EnterButton" onclick="states()">
+        </div>
+    </div>
+    <div class="startState">
+        <p id="startState"></p>
+    </div>
+    <div class="endStates">
+        <p id="endStates"></p>
     </div>
 </body>
 </html>

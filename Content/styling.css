@@ -11,6 +11,7 @@
 .inst {
     border-bottom-width: 2.5px;
     border-color: #B73E3E;
+    margin-left: 5%;
 }
 
 input {
@@ -27,6 +28,7 @@ input {
     align-self: center;
     justify-items: center;
     padding: 2%;
+    margin-left: 5%;
 }
 
 .EnterButton {
@@ -44,10 +46,19 @@ input {
 .button {
     padding-top: 2%;
     text-align: end;
-    padding-right: 5%;
+    padding-right: 20%;
 }
 
 .secondInputs {
     width: 100px;
     height: 30px;
+}
+
+.startState {
+    margin-left: 5%;
+    border-width: 2px;
+    width: 100px;
+    height: 100px;
+    border-color: #B73E3E;
+    border-radius: 50%;
 }
