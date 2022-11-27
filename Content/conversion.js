@@ -8,25 +8,30 @@ function states() {
     document.getElementById("endStates").innerHTML = finalStates;
     const states = finalStates.split(" ");
 
-    var transitions = document.getElementById("transitions").value;
-    console.log(transitions);
-    document
-        .getElementById("transitionTable")  
-        .innerHTML = transitions;
 
-    var input = document.getElementById("input").value;
-    console.log(input);
-    document.getElementById("inputString").innerHTML = input;
+    var Transitions = [];
 
-    var inputArray = input.split("");
-    console.log(inputArray);
+    Transitions.push(firstState);
+    Transitions.push(finalStates);
+    console.log(Transitions);
 
-    var transitionArray = transitions.split(" ");
-    console.log(transitionArray);
+    // var transition = document.createElement("p");
+    // var text = document.createTextNode(Transitions);
+    // transition.appendChild(text);
+    // var element = document.getElementById("transitions");
+    // element.appendChild(transition);
 
-    var transitionTable = [];
-    for (var i = 0; i < transitionArray.length; i++) {
-        transitionTable.push(transitionArray[i].split(","));
+    // //displaying the transitions
+    // var transitions = document.getElementById("transitions").innerHTML;
+    // console.log(transitions);
+
+    //loop to display the transitions
+    
+    for (var i = 0; i < Transitions.length; i++) {
+        var transition = document.createElement("p");
+        var text = document.createTextNode(Transitions[i]);
+        transition.appendChild(text);
+        var element = document.getElementById("transitions");
+        element.appendChild(transition);
     }
-    console.log(transitionTable);
 }
